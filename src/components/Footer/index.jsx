@@ -10,7 +10,7 @@ const FooterImage = styled.img`
      width: 100%;
      text-align: center;
 `
-
+//Notre fonction footer
 function Footer() {
      return (
           <div>
