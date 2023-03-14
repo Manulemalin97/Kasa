@@ -1,6 +1,6 @@
 // Importation des modules nécessaires
 import { Link } from 'react-router-dom'
-import styled from 'styled-components' // Importation du module styled-components pour définir des composants stylisés
+import styled from 'styled-components' // Importation du module styled-components pour définir des composants stylisé
 import colors from './colors' // Importation des couleurs depuis le module ../../utils/style/colors
 
 // Définition de la constante `StyledLink` qui est une version stylisée de `Link`

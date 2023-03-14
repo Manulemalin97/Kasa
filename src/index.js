@@ -1,7 +1,7 @@
 import React from 'react' // Importation du module React
 import ReactDOM from 'react-dom/client' // Importation de la méthode ReactDOM du module react-dom/client
 import Home from './pages/Home' // Importation du composant Home depuis ./pages/Home
-import Header from './components/Header' // Importation du composant Header depuis ./components/Header
+import Header from './components/Header' // Importation du composant Header depuis ./components/Heade
 import Footer from './components/Footer'
 import Error from './components/Error' // Importation du composant Error depuis ./components/Error
 import About from './pages/About' // Importation du composant About depuis ./pages/About

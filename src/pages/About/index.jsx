@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import aboutImage from '../../assets/banner-about.png' // Importation de l'image banner a propos
 
-// Définition d'une fonction React qui renvoie un élément div contenant les deux composants créés précédemment
+// Définition d'une fonction React qui renvoie un élément div contenant les deux composants créés précédemmen
 const AboutImage = styled.img`
      width: 100%;
      height: 30%;

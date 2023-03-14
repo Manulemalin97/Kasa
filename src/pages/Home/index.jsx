@@ -1,6 +1,6 @@
 //Ancienne page App.js qu'on a mis dans un fichier Home puis renommé index.jsx
 
-import styled from 'styled-components' // Importation du module styled-components pour définir des composants stylisés
+import styled from 'styled-components' // Importation du module styled-components pour définir des composants stylisé
 import homeImage from '../../assets/banner-home.png' // Importation de l'image banner de la page d'accueil
 
 const HomeImage = styled.img`

@@ -10,7 +10,7 @@ const ErrorWrapper = styled.div`
      align-items: center;
 `
 
-// Définition d'un composant ErrorTitle à l'aide de styled-components
+// Définition d'un composant ErrorTitle à l'aide de styled-component
 const ErrorTitle = styled.h1`
      font-weight: 600;
      font-size: 10em;

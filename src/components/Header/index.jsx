@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom' // Importation du composant de lien de React Router DOM
 import styled from 'styled-components' // Importation du module styled-components pour définir des composants stylisés
-import { StyledLink } from '../../utils/style/Atoms' // Importation d'un composant StyledLink personnalisé qui utilise des styles prédéfinis
+import { StyledLink } from '../../utils/style/Atoms' // Importation d'un composant StyledLink personnalisé qui utilise des styles prédéfini
 import Logo from '../../assets/logo.png' // Importation du logo de l'application
 
 // Définition d'un composant stylisé pour le logo de la page d'accueil

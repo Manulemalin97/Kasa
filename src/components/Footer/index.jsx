@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import footerImage from '../../assets/footer.png' // Importation de l'image banner a propos
 
-// Définition d'une fonction React qui renvoie un élément div contenant les deux composants créés précédemment
+// Définition d'une fonction React qui renvoie un élément div contenant les deux composants créés précédemmen
 const FooterImage = styled.img`
      position: fixed;
      bottom: 0;
