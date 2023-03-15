@@ -1,5 +1,6 @@
 import styled from 'styled-components' // Importation du module styled-components
 import colors from '../../utils/style/colors' // Importation des couleurs depuis le module ../../utils/style/colors
+import { StyledLinkError } from '../../utils/style/Atoms' // Importation d'un composant StyledLink personnalisé qui utilise des styles prédéfini
 
 // Définition d'un composant ErrorWrapper à l'aide de styled-components
 const ErrorWrapper = styled.div`
@@ -20,7 +21,7 @@ const ErrorTitle = styled.h1`
 // Définition d'un composant ErrorSubtitle à l'aide de styled-components
 const ErrorSubtitle = styled.h2`
      font-weight: 300;
-     color: ${colors.secondary};
+     color: ${colors.red};
 `
 
 // Définition du composant Error
@@ -32,6 +33,9 @@ function Error() {
                <ErrorSubtitle>
                     Oups! La page que vous demandez n'existe pas.
                </ErrorSubtitle>
+               <StyledLinkError to="/">
+                    Retourner sur la page d’accueil
+               </StyledLinkError>
           </ErrorWrapper>
      )
 }
