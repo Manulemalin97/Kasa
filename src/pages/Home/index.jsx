@@ -1,19 +1,17 @@
-//Ancienne page App.js qu'on a mis dans un fichier Home puis renommé index.jsx
+// Importation des composants nécessaires
+import Banner from '../../components/Banner/banner.jsx'
+import homeImage from '../../assets/banner-home.png'
 
-import styled from 'styled-components' // Importation du module styled-components pour définir des composants stylisé
-import homeImage from '../../assets/banner-home.png' // Importation de l'image banner de la page d'accueil
-
-const HomeImage = styled.img`
-     width: 100%;
-     height: auto;
-`
-
+// Définition du composant de fonction pour la page d'accueil
 function Home() {
-     return (
-          <div>
-               <HomeImage src={homeImage} alt="Image de la page A propos" />
-          </div>
-     )
+   return (
+      <div>
+         <Banner
+            backgroundImage={homeImage}
+            title="Chez vous, partout et ailleurs"
+         />
+      </div>
+   )
 }
-
+// Exportation du composant de fonction de la page d'accueil par défaut
 export default Home
