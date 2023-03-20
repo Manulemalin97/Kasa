@@ -5,35 +5,35 @@ import Logo from '../../assets/logo.png' // Importation du logo de l'application
 
 // Définition d'un composant stylisé pour le logo de la page d'accueil
 const HomeLogo = styled.img`
-     width: 100%;
-     height: 30%;
-     margin: 0;
-     padding: 0;
+   width: 100%;
+   height: 30%;
+   padding: 0;
 `
 
 // Définition d'un composant stylisé pour le conteneur de la barre de navigation
 const NavContainer = styled.nav`
-     padding: 30px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+   padding: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 7px;
 `
 
 // Définition du composant Header
 function Header() {
-     // Rendu du composant
-     return (
-          // Utilisation du composant NavContainer pour la barre de navigation
-          <NavContainer>
-               <Link to="/">
-                    <HomeLogo src={Logo} />
-               </Link>
-               <div>
-                    <StyledLink to="/">Accueil</StyledLink>
-                    <StyledLink to="/About">A Propos</StyledLink>
-               </div>
-          </NavContainer>
-     )
+   // Rendu du composant
+   return (
+      // Utilisation du composant NavContainer pour la barre de navigation
+      <NavContainer>
+         <Link to="/">
+            <HomeLogo src={Logo} />
+         </Link>
+         <div>
+            <StyledLink to="/">Accueil</StyledLink>
+            <StyledLink to="/About">A Propos</StyledLink>
+         </div>
+      </NavContainer>
+   )
 }
 
 export default Header // Exportation du composant Header pour une utilisation dans d'autres fichiers de l'app.
