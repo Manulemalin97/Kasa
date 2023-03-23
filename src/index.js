@@ -12,11 +12,13 @@ import { createGlobalStyle } from 'styled-components' // Importation de la méth
 // eslint-disable-next-line no-unused-vars
 const GlobalStyle = createGlobalStyle`
     * {
-      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-weight: normal;
     }
     body {
       margin: 0;
     }
+   
 `
 
 // Rendu de l'application React

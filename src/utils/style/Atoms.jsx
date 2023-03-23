@@ -5,10 +5,20 @@ import colors from './colors' // Importation des couleurs depuis le module ../..
 
 // Définition de la constante `StyledLink` qui est une version stylisée de `Link`
 export const StyledLink = styled(Link)`
-     padding: 10px 15px;
+   padding: 10px 15px;
 
-     color: ${colors.red};
-     text-decoration: none;
-     font-size: 20px;
-     text-align: center;
+   color: ${colors.red};
+   text-decoration: none;
+   font-size: 20px;
+   text-align: center;
+`
+
+export const StyledLinkError = styled(Link)`
+   padding: 10px 15px;
+
+   color: ${colors.red};
+   text-decoration: underline;
+   font-size: 20px;
+   text-align: center;
+   margin: 100px;
 `

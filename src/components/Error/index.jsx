@@ -9,7 +9,7 @@ const ErrorWrapper = styled.div`
    flex-direction: column;
    background-color: ${colors.background};
    align-items: center;
-   height: 100vh; /* ajout de la hauteur maximale à 100% */
+   height: 80vh;
 `
 
 // Définition d'un composant ErrorTitle à l'aide de styled-component
@@ -17,12 +17,18 @@ const ErrorTitle = styled.h1`
    font-weight: 600;
    font-size: 10em;
    color: ${colors.red};
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   font-size: 260px;
+   margin: 20px;
 `
 
 // Définition d'un composant ErrorSubtitle à l'aide de styled-components
 const ErrorSubtitle = styled.h2`
-   font-weight: 300;
    color: ${colors.red};
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+   font-size: 36px;
 `
 
 // Définition du composant Error

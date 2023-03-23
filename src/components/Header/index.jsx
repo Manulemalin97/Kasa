@@ -17,6 +17,9 @@ const NavContainer = styled.nav`
    justify-content: space-between;
    align-items: center;
    margin: 7px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+   font-size: 1rem;
 `
 
 // Définition du composant Header
