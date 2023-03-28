@@ -1,0 +1,64 @@
+/**
+ *  collapse.css
+ *  styles du composant collapse
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
+/* styles pour l'ensemble du composant Collapse */
+.collapse-wrapper {
+    margin-bottom: 25px;
+    border-radius: 10px;
+ }
+ 
+ /* styles pour le titre et le bouton d'ouverture/fermeture */
+ .collapse-title {
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #ff6060;;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+ }
+ 
+ /* styles pour le texte du titre */
+ .title-text {
+    margin-left: 10px;
+    color: #ffffff;
+ }
+ 
+ /* styles pour le bouton d'ouverture/fermeture */
+ .collapse-button {
+    background-color: #ff6060;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+ }
+ 
+ /* styles pour la flèche de direction du bouton */
+ .collapse-arrow {
+    height: 12px;
+    margin-left: 5px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+ }
+ 
+ /* styles pour le contenu qui est caché ou affiché en fonction de isOpen */
+ .collapse-content {
+    padding: 10px;
+    background-color: #F0F0F0;
+    border-radius: 5px 5px 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ff6060;
+ }
