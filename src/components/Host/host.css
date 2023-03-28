@@ -1,0 +1,41 @@
+/**
+ *  host.css
+ *  styles du composant host
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
+
+ /* style pour le container host */
+.host-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+ }
+
+ /* style pour le container host image */
+ .host-image-container {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+ }
+ 
+ /* style pour le container host image */
+ .host-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ /* style pour le container host name */
+ .host-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+ }

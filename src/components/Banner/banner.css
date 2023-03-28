@@ -1,4 +1,12 @@
- 
+ /**
+ *  banner.css
+ *  styles des éléments de Banner
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
  
  
  /*  Définition d'un composant de style pour le conteneur de la bannière */
@@ -12,10 +20,12 @@
     border-radius: 35px;
     margin: 35px;
   }
+
   /* Définition d'un composant de style pour le titre de la bannière */
   .banner-container h1 {
-    font-weight: 600;
     font-size: 48px;
     color: #fff;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
   }

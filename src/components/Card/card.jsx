@@ -1,84 +1,38 @@
 // Importation des modules nécessaires
-import styled from 'styled-components'
-import colors from '../../utils/style/colors'
-import logementData from '../../logement.json'
-import Footer from '../../components/Footer/'
+import React from 'react' // Importation du module React
+import logementData from '../../logement.json' // Importation des données de logement depuis un fichier JSON
+import Footer from '../../components/Footer/' // Importation du composant Footer depuis un fichier local
+import { Link } from 'react-router-dom' // Importation du composant Link depuis le module 'react-router-dom'
+import './card.css' // Importation du fichier CSS pour styliser la page de cartes de logement
 
-// Style pour le conteneur principal
-const Container = styled.div`
-   font-size: 0;
-   display: flex;
-   flex-direction: column;
-`
-
-// Style pour chaque carte
-const Card = styled.div`
-   width: 340px;
-   height: 340px;
-   color: ${colors.red};
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   margin: 40px;
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   border-radius: 35px;
-`
-
-// Style pour la grille de cartes
-const CardGrid = styled.div`
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin: 35px;
-   border-radius: 35px;
-   background-color: ${colors.secondary};
-`
-
-// Style pour l'image de chaque carte
-const CardImage = styled.img`
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   border-radius: 15px;
-   mix-blend-mode: darken;
-   filter: brightness(0.7);
-`
-// Style pour le titre de l'image
-const CardTitle = styled.h2`
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   margin: 20px;
-   padding: 0px;
-   color: white;
-   border-radius: 0 0 15px 15px;
-   font-size: 1.2rem;
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 400;
-   font-size: 1rem;
-`
-// Fonction pour la page de cartes
 function CardPage() {
-   // Création de la liste des cartes à partir des données du fichier JSON
+   // Transformation des données de logement en une liste de cartes de logement
    const cards = logementData.map((logement) => {
       return (
-         // Chaque carte contient une image et un titre
-         <Card key={logement.id}>
-            <CardImage src={logement.cover} />
-            <CardTitle>{logement.title}</CardTitle>
-         </Card>
+         // Création d'une carte de logement
+         <div className="card" key={logement.id} onClick={() => logement.id}>
+            <Link to={`/FicheLogement/${logement.id}`}>
+               {' '}
+               {/* Utilisation de la propriété "to" du composant Link pour lier chaque carte à une page de détails de logement */}
+               <img
+                  className="card-image"
+                  src={logement.cover} // On utilise la propriété "cover" de chaque objet de logement pour afficher l'image de couverture qui correspond
+                  alt={logement.title} // description de l'image
+               />
+               <h3 className="card-title">{logement.title}</h3>{' '}
+               {/* Utilisation de la propriété "title" de chaque objet de logement pour afficher le titre correspondant */}
+            </Link>
+         </div>
       )
    })
-   // Affichage des cartes dans la grille
+
+   // Affichage de la liste de cartes de logement et du composant Footer
    return (
-      <Container>
-         <CardGrid>{cards}</CardGrid>
+      <div className="container">
+         <div className="card-grid">{cards}</div>
          <Footer />
-      </Container>
+      </div>
    )
 }
-
-// Exportation de la fonction CardPage
+// Exportation du composant CardPage
 export default CardPage
