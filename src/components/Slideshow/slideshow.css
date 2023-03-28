@@ -1,0 +1,76 @@
+/**
+ *  slideshow.css
+ *  styles des éléments du carroussel 
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
+
+
+/* définit le conteneur du carousel */
+.carousel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+
+  /* définit l'image à afficher dans le carousel */
+  .carousel__image {
+    display: block;
+    margin: 50px;
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 25px;
+  }
+  
+  /* définit le bouton "précédent" et "suivant" du carousel */
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, top 0.2s ease-in-out;
+  }
+
+ /* définit le hover "précédent" et "suivant" du carousel */
+  .carousel__prev:hover,
+.carousel__next:hover {
+  transform: scale(1.1);
+  top: 37%; 
+}
+
+/* définit le positionnement de la fleche "précédent" du carousel */
+  .carousel__prev {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  /* définit le le positionnement de la fleche bouton "suivant" du carousel */
+  .carousel__next {
+    right: 10px;
+    bottom: 10px;
+  }
+ 
+
+  /* définit le titre de la section contenant le carousel. */
+  h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #ff6060;
+  }
+  
