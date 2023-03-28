@@ -1,0 +1,38 @@
+
+/**
+ *  tag.css
+ *  styles des éléments du tag
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
+/* Conteneur pour les tags */
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  /* Style des tags */
+  .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+/* Style du texte dans les tags */
+  .tag__text {
+    display: inline-block;
+    margin-left: 5px;
+    position: absolute;
+  }
