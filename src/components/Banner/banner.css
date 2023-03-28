@@ -1,0 +1,21 @@
+ 
+ 
+ 
+ /*  Définition d'un composant de style pour le conteneur de la bannière */
+.banner-container {
+    height: 223px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    margin: 35px;
+  }
+  /* Définition d'un composant de style pour le titre de la bannière */
+  .banner-container h1 {
+    font-weight: 600;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+  }
