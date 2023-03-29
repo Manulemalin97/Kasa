@@ -1,0 +1,17 @@
+/**
+ *  about.css
+ *  styles de la page about
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
+/* Css de notre conteneur de collapse */
+.contentwrapper {
+    width: 80%;
+    margin: 0 auto;
+    height: 40vw;
+    padding: 0 0px;
+ }
