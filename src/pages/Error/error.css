@@ -1,0 +1,36 @@
+/**
+ *  error.css
+ *  styles css de la page d'erreur
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
+/* style de conteneur de notre page derreur */
+.error-wrapper {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  /* style css du titre */
+  .error-title {
+    font-weight: 600;
+    font-size: 10em;
+    color: #ff6060;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 260px;
+    margin: 20px;
+  }
+  /* style des soustitres */
+  .error-subtitle {
+    color: #ff6060;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+  }
