@@ -1,0 +1,43 @@
+/**
+ *  header.css
+ *  styles du composant header
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
+/* conteneur de notre navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 35px;
+ }
+ 
+ /* logo de la page home */
+ .home-logo {
+    height: 50px;
+    padding-top: 10px;
+ }
+
+ /* position des liens */
+ .nav-links {
+    display: flex;
+    align-items: center;
+ }
+ 
+ /* liens stylisés */
+ .nav-links a {
+    margin: 20px 0px 20px;
+    color: #ff6060;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+ }
+ 
