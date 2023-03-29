@@ -1,7 +1,47 @@
 /* Afficher le Footer sur la page Home */
 
+/* corps de notre footer */
   body {
     margin: 0;
     padding: 0;
   }
-  
+
+  /* conteneur de footer */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+ }
+ 
+ /* logo de l'image du footer */
+ .logo-image {
+    max-width: 30%;
+    height: 3vw;
+    width: 20vw;
+    padding: 10px;
+ }
+ 
+ /* footer text */
+ .text {
+    color: #fff;
+    font-size: 1.8vw;
+ }
+ 
+ /* footer image */
+ .footer-image {
+    max-width: 100%;
+    height: auto;
+ }
+ 
+ /* conteneur du logo  */
+ .logo-container {
+    position: absolute;
+    bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
