@@ -1,0 +1,24 @@
+/**
+ *  rating.css
+ *  Composant du collapse
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
+
+/* conteneur de nos étoiles */
+.star-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+ }
+ 
+ /* style de notre étoile */
+ .star {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+ }
