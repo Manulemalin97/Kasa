@@ -18,7 +18,8 @@ function Tag({ text }) {
       <div className="tag">
          {' '}
          {/* Conteneur du tag */}
-         <img src={tagImg} alt="tag icon" /> {/* Image du tag */}
+         <img className="img-size" src={tagImg} alt="tag icon" />{' '}
+         {/* Image du tag */}
          <span className="tag__text">{text}</span> {/* Texte du tag */}
       </div>
    )

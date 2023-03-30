@@ -14,7 +14,8 @@
 .tag-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 27px;
   }
 
   /* Style des tags */
@@ -22,17 +23,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 35px;
+    margin-left: 21px;
     border-radius: 5px;
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-right: 10px;
     margin-bottom: 10px;
   }
 
 /* Style du texte dans les tags */
   .tag__text {
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
-    margin-left: 5px;
     position: absolute;
+    font-weight:500;
+    font-size: 10px;
+    color: white
+    
+  }
+
+  .img-size{
+    height: 3vw;
+    width: 11vw;
+  }
+
+  @media (max-width: 767px) {
+    .tag-container {
+      margin-top: 23px;
+     
+    }
+    .tag {
+   
+      margin-bottom: 35px;
+    }
+    .img-size{
+      height: 5vw;
+      width: 19vw;
+    }
+  }
+  @media (max-width: 375px) {
+    .img-size{
+      height: 5vw;
+    width: 20vw;
+    }
   }
