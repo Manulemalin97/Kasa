@@ -14,13 +14,15 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    padding: 0 35px;
+    padding: 0 25px;
+   
  }
  
  /* logo de la page home */
  .home-logo {
     height: 50px;
     padding-top: 10px;
+    margin-left: 25px;
  }
 
  /* position des liens */
@@ -41,3 +43,40 @@
     font-weight: 500;
  }
  
+ @media (max-width: 767px) { 
+   .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      padding: 0;
+   }
+
+   .home-logo {
+      height: 40px;
+      padding-top: 63px;
+      margin-left: 15px;
+      margin-left: 40px;
+   }
+   .nav-links {
+      display: flex;
+      align-items: center;
+      padding-top: 63px;
+      margin-right: 5vw;
+   }
+   .nav-links a {
+      font-size: 13px;
+   }
+ }
+
+ @media (max-width: 375px) {
+   .home-logo {
+      height: 30px;
+      padding-top: 63px;
+   }
+   .nav-container {
+   
+      padding: 0 ;
+   }
+ 
+ }
