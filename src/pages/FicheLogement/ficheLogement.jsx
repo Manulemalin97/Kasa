@@ -9,7 +9,7 @@
  **/
 
 import React from 'react'
-import { useParams } from 'react-router-dom' // importation de useParams pour obtenir les paramètres de l'URL
+import { useParams, Navigate } from 'react-router-dom' // importation de useParams pour obtenir les paramètres de l'URL
 import logementData from '../../logement.json' // importation des données de logement depuis un fichier JSON
 import Carousel from '../../components/Slideshow/slideshow' // importation du composant Carousel
 import Tag from '../../components/Tag/tag' // importation du composant Tag
@@ -23,6 +23,11 @@ function FicheLogement() {
    const { logementId } = useParams()
    // Recherche du logement correspondant à l'ID fourni
    const logement = logementData.find((l) => l.id === logementId)
+
+   // si id pas bon redirection
+   if (!logement) {
+      return <Navigate to="/error" />
+   }
 
    return (
       <div>
