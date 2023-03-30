@@ -16,8 +16,6 @@
  
  /* styles pour le titre et le bouton d'ouverture/fermeture */
  .collapse-title {
-    font-size: 16px;
-    font-weight: 500;
     display: inline-flex;
     align-items: center;
     width: 100%;
@@ -26,13 +24,13 @@
     border-radius: 7px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
  }
  
  /* styles pour le texte du titre */
  .title-text {
-    margin-left: 10px;
+    margin: 10px;
     color: #ffffff;
+    font-size: 24px;
  }
  
  /* styles pour le bouton d'ouverture/fermeture */
@@ -59,6 +57,35 @@
     border-radius: 5px 5px 10px 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 24px;
     color: #ff6060;
+ }
+
+ @media (max-width: 767px) {
+   .collapse-wrapper {
+      margin-bottom: 25px;
+      border-radius: 10px;
+      margin-left: 0;
+      width: 100%;
+   }
+
+   .title-text {
+      font-size: 15px;
+   }
+
+   .collapse-content {
+      font-size: 14px;
+   }
+   
+ }
+
+
+  @media (max-width: 375px) {
+   .collapse-wrapper {
+      margin-bottom: 25px;
+      border-radius: 10px;
+      margin-left: 0px;
+      width: 100%;
+   }
+   
  }

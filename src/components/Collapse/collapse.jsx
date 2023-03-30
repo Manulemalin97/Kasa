@@ -1,5 +1,5 @@
 /**
- *  collapse.jsx.css
+ *  collapse.jsx
  *  Composant du collapse
  *
  *  @author : Manuel JANSEN
