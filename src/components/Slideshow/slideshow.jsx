@@ -31,7 +31,18 @@ function Carousel({ logement }) {
       // Si l'index est le premier de la liste, on va à la dernière image (index length-1), sinon on décrémente l'index
       setIndex(index === 0 ? length - 1 : index - 1)
    }
-
+   // Si le nombre d'images est égal à 1, on n'affiche pas les flèches et le numéro de la slide
+   if (length === 1) {
+      return (
+         <div className="carousel">
+            <img
+               className="carousel__image"
+               src={logement.pictures[0]}
+               alt=""
+            />
+         </div>
+      )
+   }
    // Affichage du carousel avec l'image correspondant à l'index en cours
    return (
       <div className="carousel">
@@ -47,6 +58,9 @@ function Carousel({ logement }) {
             alt="previous slide"
             onClick={prevSlide}
          />
+         <div className="carousel__index">
+            {index + 1}/{length}
+         </div>
          {/* Flèche de navigation vers la slide suivante */}
          <img
             className="carousel__next"
