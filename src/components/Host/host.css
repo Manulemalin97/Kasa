@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    margin-right: 1vw;
  }
 
  /* style pour le container host image */
@@ -36,6 +37,33 @@
  /* style pour le container host name */
  .host-name {
     font-size: 1.2rem;
-    font-weight: bold;
+  
     margin-right: 10px;
+    color: #ff6060;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+ }
+
+ @media (max-width: 767px) {
+
+   .host-container {
+
+      margin-right: 9vw;
+   }
+   .host-image-container {
+      width: 3rem;
+      height: 2.5rem;
+   }
+   
+   
+  
+ }
+ @media (max-width: 375px) {
+   .host-name {
+    font-size: 1rem;
+   
+    margin-right: 5px;
+ }
+ 
+
  }
