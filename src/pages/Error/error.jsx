@@ -8,11 +8,9 @@
  *
  **/
 
-import { StyledLinkError } from '../../utils/style/Atoms' // Importation d'un composant StyledLink personnalisé qui utilise des styles prédéfini
-import './error.css' // importation de notre style css
-// Définition d'un composant ErrorWrapper à l'aide de styled-components
+import { Link } from 'react-router-dom'
+import './error.css'
 
-// Définition du composant Error
 function Error() {
    return (
       <div className="error-wrapper">
@@ -20,9 +18,9 @@ function Error() {
          <h2 className="error-subtitle">
             Oups! La page que vous demandez n'existe pas.
          </h2>
-         <StyledLinkError className="error-link" to="/">
+         <Link className="error-link" to="/">
             Retourner sur la page d’accueil
-         </StyledLinkError>
+         </Link>
       </div>
    )
 }
