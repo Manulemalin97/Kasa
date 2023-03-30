@@ -1,4 +1,13 @@
-/* Afficher le Footer sur la page Home */
+/**
+ *  footer.css
+ *  styles du composant footer
+ *
+ *  @author : Manuel JANSEN
+ *  @version : 1.0
+ *  @ date : 2023-03
+ *
+ **/
+
 
 /* corps de notre footer */
   body {
@@ -44,4 +53,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ }
+
+ @media (max-width: 767px) {
+  
+   
+   .logo-container {
+      bottom: 0;
+  }
+
+  .footer-image {
+   max-width: 100%;
+   height: 25vw;
+}
+
+.logo-image {
+   max-width: 46%;
+   height: 4vw;
+   padding: 39px;
+}
+.text {
+   font-size: 2.5vw;
+   margin-top: 0;
+}
+ }
+ @media (max-width: 375px) {
+ 
+   .logo-image {
+      max-width: 36%;
+      height: 7.5vw;
+      padding: 24px;
+  }
+  .footer-image {
+   max-width: 100%;
+   height: 38vw;
+}
+.text {
+   font-size: 4.5vw;
+}
  }
