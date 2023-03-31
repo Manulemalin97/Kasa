@@ -8,8 +8,8 @@
  *
  **/
 
-import { Link } from 'react-router-dom'
-import './error.css'
+import { Link } from 'react-router-dom';
+import './error.css';
 
 function Error() {
    return (
@@ -22,7 +22,7 @@ function Error() {
             Retourner sur la page d’accueil
          </Link>
       </div>
-   )
+   );
 }
 
-export default Error
+export default Error;

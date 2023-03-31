@@ -8,25 +8,25 @@
  *
  **/
 
-import React from 'react'
-import { useParams, Navigate } from 'react-router-dom' // importation de useParams pour obtenir les paramètres de l'URL
-import logementData from '../../logement.json' // importation des données de logement depuis un fichier JSON
-import Carousel from '../../components/Slideshow/slideshow' // importation du composant Carousel
-import Tag from '../../components/Tag/tag' // importation du composant Tag
-import Host from '../../components/Host/host' // importation du composant Host
-import Rating from '../../components/Rating/rating' // importation du composant Rating
-import Collapse from '../../components/Collapse/collapse' // importation du component collapse
-import './fichelogement.css' // importation du fichier CSS
+import React from 'react';
+import { useParams, Navigate } from 'react-router-dom'; // importation de useParams pour obtenir les paramètres de l'URL
+import logementData from '../../logement.json'; // importation des données de logement depuis un fichier JSON
+import Carousel from '../../components/Slideshow/slideshow'; // importation du composant Carousel
+import Tag from '../../components/Tag/tag'; // importation du composant Tag
+import Host from '../../components/Host/host'; // importation du composant Host
+import Rating from '../../components/Rating/rating'; // importation du composant Rating
+import Collapse from '../../components/Collapse/collapse'; // importation du component collapse
+import './fichelogement.css'; // importation du fichier CSS
 
 function FicheLogement() {
    // Obtention des paramètres de l'URL
-   const { logementId } = useParams()
+   const { logementId } = useParams();
    // Recherche du logement correspondant à l'ID fourni
-   const logement = logementData.find((l) => l.id === logementId)
+   const logement = logementData.find((l) => l.id === logementId);
 
    // si id pas bon redirection
    if (!logement) {
-      return <Navigate to="/error" />
+      return <Navigate to="/error" />;
    }
 
    return (
@@ -74,7 +74,7 @@ function FicheLogement() {
             </div>
          )}
       </div>
-   )
+   );
 }
 
-export default FicheLogement
+export default FicheLogement;

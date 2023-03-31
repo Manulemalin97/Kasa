@@ -8,8 +8,8 @@
  *
  **/
 
-import React from 'react' // Importation du module React
-import './banner.css' // importation du fichier CSS
+import React from 'react'; // Importation du module React
+import './banner.css'; // importation du fichier CSS
 
 // Définition d'un composant de fonction pour la bannière
 function Banner(props) {
@@ -20,7 +20,7 @@ function Banner(props) {
       >
          <h1 className="banner-title">{props.title}</h1>
       </div>
-   )
+   );
 }
 // Exportation du composant de fonction de la bannière par défaut
-export default Banner
+export default Banner;

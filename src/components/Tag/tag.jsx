@@ -8,9 +8,9 @@
  *
  **/
 
-import React from 'react'
-import './tag.css' // Import du fichier CSS pour le style du composant
-import tagImg from '../../assets/tag.png' // Import de l'image du tag
+import React from 'react';
+import './tag.css'; // Import du fichier CSS pour le style du composant
+import tagImg from '../../assets/tag.png'; // Import de l'image du tag
 
 // Définition du composant Tag sous forme de fonction avec le texte du tag comme paramètre
 function Tag({ text }) {
@@ -22,7 +22,7 @@ function Tag({ text }) {
          {/* Image du tag */}
          <span className="tag__text">{text}</span> {/* Texte du tag */}
       </div>
-   )
+   );
 }
 
-export default Tag // Export du composant Tag pour l'utiliser ailleurs dans l'application
+export default Tag; // Export du composant Tag pour l'utiliser ailleurs dans l'application

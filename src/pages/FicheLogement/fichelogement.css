@@ -20,27 +20,25 @@
 /* Style pour le titre  */
 .title {
   margin-right: 1rem;
+  
 }
 
 /* Style pour la localisation du logement  */
 .location {
   margin-bottom: 0;
   margin-left: 3rem;
+  color: #ff6060;
+  font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Style pour le conteneur du tag */
-.tag-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
 
 /* Style pour le conteneur du système de note */
 .rating-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 30px;
   margin-bottom: 10px;
 }
 
@@ -49,6 +47,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 25px;
 }
 
 /* Style pour le conteneur du des items du collapse */
@@ -56,4 +55,27 @@
   flex-basis: 50%;
   padding: 1rem;
   box-sizing: border-box;
+}
+
+/****************************************************************************************** Media queries / Responsive ***************************************************************************/
+
+@media (max-width: 767px) {
+ 
+
+
+  .title-container {
+    margin-right: 0;
+  }
+
+  .location {
+    font-size: 3vw;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .location {
+    font-size: 3vw;
+  }
+
 }

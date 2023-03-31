@@ -44,13 +44,13 @@
     width: 11vw;
   }
 
+  /****************************************************************************************** Media queries / Responsive ***************************************************************************/
+
   @media (max-width: 767px) {
     .tag-container {
       margin-top: 23px;
-     
     }
     .tag {
-   
       margin-bottom: 35px;
     }
     .img-size{
@@ -58,6 +58,7 @@
       width: 19vw;
     }
   }
+
   @media (max-width: 375px) {
     .img-size{
       height: 5vw;

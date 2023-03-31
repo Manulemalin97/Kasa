@@ -43,6 +43,8 @@
     font-weight: 500;
  }
  
+ /****************************************************************************************** Media queries / Responsive ***************************************************************************/
+
  @media (max-width: 767px) { 
    .nav-container {
       display: flex;
@@ -58,6 +60,7 @@
       margin-left: 15px;
       margin-left: 40px;
    }
+
    .nav-links {
       display: flex;
       align-items: center;
@@ -75,7 +78,6 @@
       padding-top: 63px;
    }
    .nav-container {
-   
       padding: 0 ;
    }
  

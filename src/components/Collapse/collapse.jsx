@@ -8,19 +8,19 @@
  *
  **/
 
-import React, { useState } from 'react' // Cette ligne de code importe React et useState pour permettre la gestion de l'état local dans les composants React.
-import './collapse.css' // importer le fichier css pour le style
-import flecheHaut from '../../assets/flechehaut.png' //importer  l'image "flechehaut" de assets ou on stock les images
-import flecheBas from '../../assets/flechebas.png' //importer 'limage "flechehaut" de assets ou on stock les images
+import React, { useState } from 'react'; // Cette ligne de code importe React et useState pour permettre la gestion de l'état local dans les composants React.
+import './collapse.css'; // importer le fichier css pour le style
+import flecheHaut from '../../assets/flechehaut.png'; //importer  l'image "flechehaut" de assets ou on stock les images
+import flecheBas from '../../assets/flechebas.png'; //importer 'limage "flechehaut" de assets ou on stock les images
 
 function Collapse(props) {
    // On initialise un state pour gérer l'état d'ouverture/fermeture du composant Collapse
-   const [isOpen, setIsOpen] = useState(false)
+   const [isOpen, setIsOpen] = useState(false);
 
    // On crée une fonction qui sera appelée lors du clic sur le bouton, et qui va inverser la valeur de l'état isOpen
    const handleToggle = () => {
-      setIsOpen(!isOpen)
-   }
+      setIsOpen(!isOpen);
+   };
 
    return (
       // Wrapper pour englober l'ensemble du composant Collapse
@@ -42,7 +42,7 @@ function Collapse(props) {
          {/*  On affiche le contenu du Collapse si isOpen est vrai */}
          {isOpen && <div className="collapse-content">{props.children}</div>}
       </div>
-   )
+   );
 }
 // Exportation du composant Collapse
-export default Collapse
+export default Collapse;

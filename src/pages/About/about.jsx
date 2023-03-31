@@ -8,12 +8,12 @@
  *
  **/
 
-import React from 'react' // Importation du module React
-import Banner from '../../components/Banner/banner.jsx' // Importation du composant Banner
-import bannerImage from '../../assets/banner-about.png' // Importation de l'image du banner de la page a propos
-import Footer from '../../components/Footer/footer' // Importation du composant Footer
-import Collapse from '../../components/Collapse/collapse' // Importation du composant collapse
-import './about.css' // Importation du style css de notre page a propos
+import React from 'react'; // Importation du module React
+import Banner from '../../components/Banner/banner.jsx'; // Importation du composant Banner
+import bannerImage from '../../assets/banner-about.png'; // Importation de l'image du banner de la page a propos
+import Footer from '../../components/Footer/footer'; // Importation du composant Footer
+import Collapse from '../../components/Collapse/collapse'; // Importation du composant collapse
+import './about.css'; // Importation du style css de notre page a propos
 
 // Fonction About qui contient la description de nos collapse
 function About() {
@@ -59,8 +59,8 @@ function About() {
             </div>
          </div>
       </>
-   )
+   );
 }
 
 // On exporte le composant pour pour le réutiliser, notamment dans app.js (qui s'appelle index.js maintenant)
-export default About
+export default About;

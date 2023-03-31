@@ -58,15 +58,18 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
   }
+
+  /****************************************************************************************** Media queries / Responsive ***************************************************************************/
+
   @media (max-width: 926px) {
-  
     .card {
     width: 550px;
     height: 300px;
 }
+
   }
+
   @media (max-width: 767px) {
-  
     .card-grid {
       display: flex;
       flex-wrap: wrap;
@@ -96,6 +99,7 @@
     .card-grid {
       background-color: white;
     }
+    
     .card-image {
       border-radius: 10px;
       

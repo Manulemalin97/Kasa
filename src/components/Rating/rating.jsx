@@ -8,12 +8,12 @@
  *
  **/
 
-import React from 'react' // importation du module react
-import orange from '../../assets/etoileOrange.png' // Importation de l'image pour les étoiles orange
-import gris from '../../assets/etoileGrise.png' // Importation de l'image pour les étoiles grises
-import './rating.css' // importation du style css
+import React from 'react'; // importation du module react
+import orange from '../../assets/etoileOrange.png'; // Importation de l'image pour les étoiles orange
+import gris from '../../assets/etoileGrise.png'; // Importation de l'image pour les étoiles grises
+import './rating.css'; // importation du style css
 const Rating = ({ rate }) => {
-   const stars = [1, 2, 3, 4, 5] // Création d'un tableau avec les 5 étoiles
+   const stars = [1, 2, 3, 4, 5]; // Création d'un tableau avec les 5 étoiles
 
    return (
       <div className="star-wrapper">
@@ -27,7 +27,7 @@ const Rating = ({ rate }) => {
             )
          )}
       </div>
-   )
-}
+   );
+};
 
-export default Rating
+export default Rating;

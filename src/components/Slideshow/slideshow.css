@@ -74,6 +74,7 @@
     color: #ff6060;
   }
 
+  /* numéro de la page */
   .carousel__index {
     position: absolute;
     bottom: 80px;
@@ -88,9 +89,9 @@
  }
   
  
-/* Media query pour les écrans de moins de 768px */
+/****************************************************************************************** Media queries / Responsive ***************************************************************************/
+
 @media (max-width: 767px) {
-  /* Réduire la taille de la police pour la localisation */
   
   .collapse-container {
     display: block !important;

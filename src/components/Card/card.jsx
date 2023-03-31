@@ -9,11 +9,11 @@
  **/
 
 // Importation des modules nécessaires
-import React from 'react' // Importation du module React
-import logementData from '../../logement.json' // Importation des données de logement depuis un fichier JSON
-import Footer from '../Footer/footer' // Importation du composant Footer depuis un fichier local
-import { Link } from 'react-router-dom' // Importation du composant Link depuis le module 'react-router-dom'
-import './card.css' // Importation du fichier CSS pour styliser la page de cartes de logement
+import React from 'react'; // Importation du module React
+import logementData from '../../logement.json'; // Importation des données de logement depuis un fichier JSON
+import Footer from '../Footer/footer'; // Importation du composant Footer depuis un fichier local
+import { Link } from 'react-router-dom'; // Importation du composant Link depuis le module 'react-router-dom'
+import './card.css'; // Importation du fichier CSS pour styliser la page de cartes de logement
 
 function CardPage() {
    // Transformation des données de logement en une liste de cartes de logement
@@ -32,8 +32,8 @@ function CardPage() {
                {/* Utilisation de la propriété "title" de chaque objet de logement pour afficher le titre correspondant */}
             </Link>
          </div>
-      )
-   })
+      );
+   });
 
    // Affichage de la liste de cartes de logement et du composant Footer
    return (
@@ -41,7 +41,7 @@ function CardPage() {
          <div className="card-grid">{cards}</div>
          <Footer />
       </div>
-   )
+   );
 }
 // Exportation du composant CardPage
-export default CardPage
+export default CardPage;

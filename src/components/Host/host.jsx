@@ -8,8 +8,8 @@
  *
  **/
 
-import React from 'react' // importation du module reavt
-import './host.css' // importe le fichier de styles "host.css"
+import React from 'react'; // importation du module reavt
+import './host.css'; // importe le fichier de styles "host.css"
 
 // déclare un composant "Host" qui prend deux propriétés, name et picture
 
@@ -26,7 +26,7 @@ const Host = ({ name, picture }) => {
          {/* div pour afficher le nom de l'hote avec la classe "host-name" */}
          <div className="host-name">{name}</div>
       </div>
-   )
-}
+   );
+};
 
-export default Host // exporte le composant "Host" pour pouvoir l'utiliser ailleurs
+export default Host; // exporte le composant "Host" pour pouvoir l'utiliser ailleurs
