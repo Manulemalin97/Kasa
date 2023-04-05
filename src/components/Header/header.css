@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    padding: 0 25px;
+
    
  }
  
@@ -33,12 +33,12 @@
  
  /* liens stylisés */
  .nav-links a {
-    margin: 20px 0px 20px;
+
     color: #ff6060;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 35px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
  }
@@ -50,25 +50,25 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 50px;
-      padding: 0;
+     
    }
 
    .home-logo {
       height: 40px;
-      padding-top: 63px;
-      margin-left: 15px;
+      padding-top: 40px;
       margin-left: 40px;
    }
 
    .nav-links {
       display: flex;
       align-items: center;
-      padding-top: 63px;
+      padding-top: 66px;
       margin-right: 5vw;
+      padding-bottom: 3vw;
    }
    .nav-links a {
-      font-size: 13px;
+      font-size: 15px;
+      padding: 10px 15px;
    }
  }
 
@@ -77,8 +77,9 @@
       height: 30px;
       padding-top: 63px;
    }
-   .nav-container {
-      padding: 0 ;
-   }
- 
+  
+   .nav-links {
+
+      padding-bottom: 1vw;
+  }
  }

@@ -13,7 +13,7 @@ import ReactDOM from 'react-dom/client'; // Importation de la méthode ReactDOM 
 import Home from './pages/Home/home.jsx'; // Importation du composant Home depuis ./pages/Home
 import Header from './components/Header/header'; // Importation du composant Header depuis ./components/Heade
 import Error from './pages/Error/error'; // Importation du composant Error depuis ./components/Error
-import CardPage from './components/Card/card';
+import CardPage from './components/Card/card'; // IMportation du composant Card depuis ./components/card
 import FicheLogement from './pages/FicheLogement/ficheLogement'; // Importation du composant FicheLogement depuis ./pages/FicheLogement
 import About from './pages/About/about'; // Importation du composant About depuis ./pages/About
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importation de Router, Routes et Route depuis le module react-router-dom

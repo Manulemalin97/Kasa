@@ -19,62 +19,70 @@ import Collapse from '../../components/Collapse/collapse'; // importation du com
 import './fichelogement.css'; // importation du fichier CSS
 
 function FicheLogement() {
-   // Obtention des paramètres de l'URL
-   const { logementId } = useParams();
-   // Recherche du logement correspondant à l'ID fourni
-   const logement = logementData.find((l) => l.id === logementId);
+  // Obtention des paramètres de l'URL
+  const { logementId } = useParams();
+  // Recherche du logement correspondant à l'ID fourni
+  const logement = logementData.find((l) => l.id === logementId);
 
-   // si id pas bon redirection
-   if (!logement) {
-      return <Navigate to="/error" />;
-   }
+  // si id pas bon redirection
+  if (!logement) {
+    return <Navigate to="/error" />;
+  }
 
-   return (
-      <div>
-         {/* Affichage du contenu uniquement si un logement correspondant a été trouvé */}
-         {logement && (
-            <div>
-               {/* Affichage du composant Carousel pour les images */}
-               <Carousel logement={logement} />
-               {/* Affichage du titre et du nom de l'hôte */}
-               <div className="title-container">
-                  <h1 className="title">{logement.title}</h1>
-                  <Host
-                     name={logement.host.name}
-                     picture={logement.host.picture}
-                  />
-               </div>
-               {/* Affichage de la note et de la localisation */}
-               <div className="rating-container">
-                  <div className="location">{logement.location}</div>
-                  <Rating rate={logement.rating} />
-               </div>
-               {/* Affichage des tags */}
-               <div className="tag-container">
-                  {logement.tags.map((tag, index) => (
-                     <Tag key={index} text={tag} />
-                  ))}
-               </div>
-               {/* Affichage des sections de la fiche logement avec Collapse */}
-               <div className="collapse-container">
-                  <div className="collapse-item">
-                     <Collapse title="Description">
-                        <p>{logement.description}</p>
-                     </Collapse>
-                  </div>
-
-                  <div className="collapse-item">
-                     <Collapse title="Équipements">
-                        {logement.equipments.map((equipment, index) => (
-                           <p key={index}>{equipment}</p>
-                        ))}
-                     </Collapse>
-                  </div>
-               </div>
+  return (
+    <div>
+      {/* Affichage du contenu uniquement si un logement correspondant a été trouvé */}
+      {logement && (
+        <div>
+          {/* Affichage du composant Carousel pour les images */}
+          <Carousel logement={logement} />
+          <div className="container">
+            {/* Affichage du titre et la localisation et les tags */}
+            <div className="title-container">
+              <h1 className="title">{logement.title}</h1>
+              <div className="location">{logement.location}</div>
+              {/* Affichage des tags */}
+              <div className="tag-container">
+                {logement.tags.map((tag, index) => (
+                  <Tag key={index} text={tag} />
+                ))}
+              </div>
             </div>
-         )}
-      </div>
-   );
+            {/* Affichage de la note et de l'hôte */}
+            <div className="host-rating-container">
+              <div className="host_rating">
+                <div className="host_container">
+                  <Host
+                    name={logement.host.name}
+                    picture={logement.host.picture}
+                  />
+                </div>
+                <div className="rating-container">
+                  <Rating rate={logement.rating} />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Affichage des sections de la fiche logement avec Collapse */}
+          <div className="collapse-container">
+            <div className="collapse-item">
+              <Collapse title="Description">
+                <p>{logement.description}</p>
+              </Collapse>
+            </div>
+
+            <div className="collapse-item">
+              <Collapse title="Équipements">
+                {logement.equipments.map((equipment, index) => (
+                  <p key={index}>{equipment}</p>
+                ))}
+              </Collapse>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default FicheLogement;

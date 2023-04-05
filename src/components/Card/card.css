@@ -9,9 +9,8 @@
  **/
 
 /* style pour le conteneur global */
-.container {
-    position: relative;
-    font-size: 0;
+.cardContainer {
+   
     display: flex;
     flex-direction: column;
   }
