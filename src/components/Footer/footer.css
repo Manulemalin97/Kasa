@@ -81,9 +81,9 @@
 
  @media (max-width: 375px) {
    .logo-image {
-      max-width: 36%;
-      height: 7.5vw;
-      padding: 24px;
+      max-width: 44%;
+    height: 5vw;
+    padding: 26px;
   }
 
   .footer-image {
